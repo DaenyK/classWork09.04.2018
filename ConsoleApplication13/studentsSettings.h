@@ -11,3 +11,4 @@ void printInfoGender(Gender m);
 void printInfo(students*man);
 void genStudents();
 
+void CreateFileForStudents(students*people, char * fileName);

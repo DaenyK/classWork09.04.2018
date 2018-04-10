@@ -7,6 +7,7 @@
 #include <string.h>
 #include <conio.h>
 #include "students.h"
+#include "workStudents.h"
 
 
 void generateName(char*name)
@@ -67,9 +68,9 @@ void printInfoDate(students*man)
 void printInfoGender(Gender m)
 {
 	if (m == male)
-		printf("\tmale");
+		printf("\tmale\t");
 	else 
-		printf("\tfemale");
+		printf("\tfemale\t");
 
 }
 
@@ -93,12 +94,14 @@ void genStudents()
 			createName(stud[i].name);
 			generateDate(&stud[i].date);
 			stud[i].gender = genGender();
+			printInfo(&stud[i]);
 			for (int j = 0;j < 10;j++)
 			{
 				genSub(&stud[i].sub[j]);
+				printf("%s - %d бб\t", stud[i].sub[j].name, stud[i].sub[j].bal);
 			}
-
-			printInfo(&stud[i]);
+			printf("______________________________________________________________________________________________\n");
 		}
 	}
+	CreateFileForStudents(stud, "//dc/Студенты/ПКО/SMB-172.1/Капашева Дана/students.txt");
 }

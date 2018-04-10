@@ -21,7 +21,7 @@
     <ClCompile Include="studentsSettings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="wordStudentscpp.cpp">
+    <ClCompile Include="workStudentscpp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="studentsSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="workStudents.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

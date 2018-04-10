@@ -7,6 +7,9 @@
 #include <string.h>
 #include <conio.h>
 #include "studentsSettings.h"
+#include "workStudents.h"
+
+
 
 #define printName(name)  printf("hello, %s\n", name)
 using namespace std;
@@ -52,9 +55,7 @@ void main()
 
 		case 2:
 		{
-			
-			
-
+			genStudents();
 
 		}break;
 
